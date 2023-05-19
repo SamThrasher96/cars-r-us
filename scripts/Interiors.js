@@ -7,7 +7,7 @@ const handleInteriorChoice = (event) => {
 };
 
 export const interiorOptions = async () => {
-    const response = await fetch("http://localhost:8088/interior")
+    const response = await fetch("http://localhost:8088/interiors")
     const interiors = await response.json()
     document.addEventListener("change", handleInteriorChoice)
 
@@ -16,7 +16,7 @@ export const interiorOptions = async () => {
   `);
 
   const interiorColorOptionsHTML = `
-        <select id="interior-color-select">
+        <select class="dropDown" id="interior-color-select">
         <option value="0">Select an interior design</option>
         ${interiorColorOptionsHTMLArray.join('')}
     </select>

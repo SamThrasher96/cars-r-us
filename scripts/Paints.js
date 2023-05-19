@@ -8,7 +8,7 @@ const handlePaintChoice = (event) => {
 };
 
 export const paintOptions = async () => {
-    const response = await fetch("http://localhost:8088/paintColor")
+    const response = await fetch("http://localhost:8088/paints")
     const paintColors = await response.json()
     document.addEventListener("change", handlePaintChoice)
     
@@ -17,7 +17,7 @@ export const paintOptions = async () => {
   `);
 
   const paintColorOptionsHTML = `
-        <select id="paint-color-select">
+        <select class="dropDown" id="paint-color-select">
         <option value="0">Select a paint color</option>
         ${paintColorOptionsHTMLArray.join('')}
     </select>

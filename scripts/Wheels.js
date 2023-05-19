@@ -17,7 +17,7 @@ export const wheelOptions = async () => {
 );
 
     const wheelOptionsHTML = `
-        <select id="wheel-option-select">
+        <select class="dropDown" id="wheel-option-select">
         <option value="0">Select a wheel option</option>
         ${wheelOptionsHTMLArray.join("")}
     </select>

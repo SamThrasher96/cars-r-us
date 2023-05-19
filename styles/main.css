@@ -19,20 +19,39 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing: 2px;
 }
 
+
 .choices {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-    background-color: rgba(red, green, blue, alpha);
     padding: 1rem;
     margin: 0.5rem 0;
     font-size: smaller;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.options {
+  border: 1px dashed royalblue;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgb(143, 143, 143);
+  margin: 2rem;
+}
+
+.order {
+  display: flex;
+  align-items: flex-start;
+}
+
+.order button {
+  background-color: coral;
   }
   
-  .choices__interior,
-  .choices__paint,
-  .choices__technology,
-  .choices__wheel {
-    border: 1px dashed royalblue;
-    padding: 1rem;
+  .customOrderDisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: auto;
   }
+
+.dropDown {
+  width: 15rem;
+}
